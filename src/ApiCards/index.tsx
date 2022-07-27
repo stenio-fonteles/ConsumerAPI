@@ -39,8 +39,6 @@ export default function ApiCards() {
         
         setNumber((oldState) => [...oldState,numberOfCard]);
     }
-    
-    
     function handleAddCard(){
         getCards();
     }
@@ -50,6 +48,7 @@ export default function ApiCards() {
         let passNumber = Number(number[i])
         soma += passNumber
     }
+
     function handleStop(){
         if(soma >= 0 && soma <= 10) {
             alert("Treine mais")
